@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.bannerheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3772FF;
+    /* height: 5vh; */
+    width: 100%;
+    padding: 0.28rem 0;
+    flex-wrap: wrap;
+}
+
+.bannerheader p{
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    line-height: 26px;
+    
+}
+
+.bannerheader p::selection{
+    background-color: #FFFFFF;
+    color: #3772FF;
+}

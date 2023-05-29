@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+.currenttab{
+    position: relative;
+    top:5rem;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    transition: 0.3s all ease-in;
+}
+
+.currenttabchange{
+    position: relative;
+    top:5rem;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    transition: 0.3s all ease-in;
+}
+
+.currenttab span{
+    position:absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    top:-3rem;
+    padding:0.5rem;
+    color: white;
+    /* border-bottom: 3px solid #3772FF; */
+    margin-left: 3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s border-bottom ease-in-out;
+}
+
+.currenttab span:hover{
+    background-color: #353945;
+    cursor: default;
+}
+
+.currenttab span:hover:after{
+    background-color: #6ba6f4;
+    cursor: default;
+}
+
+.currenttab span::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    background-color: #3772FF;
+    width: 100%;
+    height: 3px;
+    margin-top: 11%;
+    left: 0%;
+}
+
+.currenttabchange span{
+    position:absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    top:-3rem;
+    padding:0.5rem;
+    color: white;
+    /* border-bottom: 0px solid #3772FF; */
+    margin-left: 3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.currenttabchange span:hover{
+    background-color: #353945;
+    cursor: default;
+}
+
+.currenttabchange span:hover:after{
+    background-color: #6ba6f4;
+    cursor: default;
+}
+
+.currenttabchange span::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    background-color: #3772FF;
+    width: 100%;
+    height: 3px;
+    margin-top: 11%;
+    left: 0%;
+}
+
+p{
+    color: white;
+}
+
+.currenttab span::after{
+    animation-name: fillwidth;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.currenttabchange span::after{
+    animation-name: fillwidth;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fillwidth {
+    0% {
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

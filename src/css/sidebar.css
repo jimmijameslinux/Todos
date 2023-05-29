@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.sidemenuright {
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 30rem;
+    border-top: .2rem solid #242731;
+    border-left: .2rem solid #242731;
+    padding-block: 2rem;
+}
+
+.sidemenuright span {
+    word-break: keep-all;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.sidemenuright .addinputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.addinputs * {
+    margin-bottom: 1rem;
+}
+
+.addinputs input:first-child {
+    color: white;
+    background-color: #242731;
+    border-radius: 12px;
+    border: none;
+    outline: aqua;
+    padding: 10px;
+    width: 265px;
+    height: 51px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    caret-color: white;
+}
+
+.addinputs input::placeholder {
+    color: #A6A6A6;
+}
+
+.addinputs textarea {
+    color: white;
+    background-color: #242731;
+    border-radius: 12px;
+    border: none;
+    outline: aqua;
+    padding: 10px;
+    width: 264px;
+    height: 110px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    caret-color: white;
+}
+
+.addinputs textarea::placeholder {
+    color: #808191;
+}
+
+.sidemenuright .topbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.topbar span {
+    padding-inline: 2rem;
+}
+
+.topbar>img {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.3rem;
+    color: #808191;
+    z-index: 1;
+    transition: 0.3s all ease-in-out;
+}
+
+.topbar>img:hover {
+    background-color: #353945;
+}
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: green;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+} */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: white;
+
+}
+
+/* ////////////////////////////// */
+/* close */
+/* 
+.imgclose{
+    position:relative;
+    top:5rem;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    width:30rem;
+    border-left:3px solid #242731;
+    padding-block: 2rem;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s all ease-in-out;
+}
+
+.imgclose span{
+    word-break: keep-all;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.imgclose .addinputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.addinputs *{
+    margin-bottom: 1rem;
+}
+
+.imgclose .topbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline:1rem;
+} */
+
+.imgclose {
+    display: none;
+}
+
+button{
+    background-color: #3772FF;
+    color: #FFFFFF;
+    width: 257px;
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #477af5;
+}
