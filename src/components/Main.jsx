@@ -1,7 +1,7 @@
 import Edittodo from "./Edittodo"
 import "../css/main.css"
 
-export default function Main({ classchanged, name, value, taskName, taskDescription }) {
+export default function Main({ classchanged, name, value}) {
   return (
     <div className={classchanged === "sidebarnavchange" ? "currenttabchange" : "currenttab"}>
       <span className="animate" title={name}>{name}</span>
@@ -10,19 +10,10 @@ export default function Main({ classchanged, name, value, taskName, taskDescript
         value === "homevalue" ?
           <>
             <p>home</p>
-            {/* {
-              taskName === "" ? null :
-                  <p>{taskName}</p>
-            }
-
-            {
-              taskDescription === "" ? null :
-                  <p>{taskDescription}</p>
-            } */}
           </>
           :
-          value === "sessionvalue" ?
-            <Edittodo taskName={taskName} taskDescription={taskDescription} />
+          value === "sectionvalue" ?
+            <Edittodo />
             :
             <h1>Waiting for new tab</h1>
       }

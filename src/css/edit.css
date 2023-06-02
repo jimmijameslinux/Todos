@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+.edittodoclass>div {
+    margin-left: 1rem;
+}
+
+.addlist {
+    order: 1;
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    max-width: 15vw;
+    min-width: 12rem;
+    height: 3rem;
+    left: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242731;
+}
+
+.listtodo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    order: 0;
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    max-width: 15vw;
+    min-width: 12rem;
+    height: 3rem;
+    left: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242731;
+}
+
+.todo {
+    order: 1;
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    max-width: 15vw;
+    min-width: 12rem;
+    left: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #242731;
+    margin-top: 1rem;
+}
+
+/* .todo .todoitemnamedesc{
+    display: flex;
+    flex-direction: column;
+} */
+
+.todo  img{
+    cursor: pointer;
+    background-color: #353945;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.todo img:hover{
+    background-color: #4f5567;
+}
+
+.addlist span {
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.list span {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.todo span {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+
+.addlist button {
+    width: 26.5px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #353945;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    /* margin-left: 4.5rem; */
+}
+
+.addlist button:hover {
+    background-color: #4f5567;
+}
+
+.addtodo button {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    background-color: #353945;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    /* margin-left: 4.5rem; */
+}
+
+.addtodo button:hover {
+    background-color: #4f5567;
+}
+
+.addtodo{
+
+    margin-top: 1rem;
+    display: flex;
+    /* flex-direction: column; */
+    padding: 1rem;
+    position: relative;
+    max-width: 15vw;
+    min-width: 12rem;
+    /* height: 3rem; */
+    left: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #191B20;
+}
+
+.addtodo span {
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.addtodo div:nth-child(2) span:first-child{
+    font-size: 18px;
+    margin-left: 0.5rem;
+    color: #808191;
+}
+
+.addtodo div:nth-child(2) span:nth-child(2){
+    font-size: 0.9rem;
+    margin-left: -1rem;
+}
+
+.todo div:nth-child(2) span:first-child{
+    font-size: 18px;
+    margin-left: 0.5rem;
+    /* color: #808191; */
+}
+
+.todo div:nth-child(2) span:nth-child(2){
+    font-size: 0.9rem;
+    margin-left: -1rem;
+    color: #808191;
+}
+.moneyimg{
+    display: flex;
+}
+
+.moneyimg img{
+    border-radius: 50%;
+    padding: 0.2rem;
+    background: linear-gradient(#BBB5E2,#9C92DF);
+}
+
+.moneyimg div:first-child{
+    display: flex;
+    flex-direction: column;
+}
